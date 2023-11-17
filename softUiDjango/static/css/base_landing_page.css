@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    font-size: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container header {
+    height: 80px;
+    background-color: red;
+}
+
+.container main {
+    height: auto;
+    background-color: green;
+}
+
+.container footer {
+    height: 120px;
+    background-color: blue;
+}

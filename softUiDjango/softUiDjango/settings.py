@@ -124,6 +124,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    # "/var/www/static/",
+]
 
 STATIC_URL = 'static/'
 
@@ -132,6 +136,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_REDIRECT_URL = '/dasboard'
+LOGIN_REDIRECT_URL = '/dashboard'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
