@@ -204,6 +204,10 @@
        {% else %}
          <li><a href="{% url 'login'%}?next={{request.path}}">Iniciar sesión</a></li>
        {% endif %}
+
+       {% if user.is_authenticated %}
+        <li><a href="{% url "profile" %}">Perfile</a></li>       
+       {% endif %}
       </ul>    
     </div>
   </aside>

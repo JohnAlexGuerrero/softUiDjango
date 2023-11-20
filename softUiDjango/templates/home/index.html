@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-  <link rel="stylesheet" href="{% static 'css/soft-ui-dashboard.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/base_landing_page.css' %}">
   <title>
     Soft UI Dashboard by Creative Tim
   </title>
@@ -29,10 +29,37 @@
 </head>
 
 <body class="g-sidenav-show  bg-gray-100">
-  <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
-    {% include "includes/navigation.html" %}
-
-  </main>
+  {% comment %} <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg "> {% endcomment %}
+    <div class="landing-page">
+      <header>
+        <div class="container">
+          <a href="#" class="logo">Your <b>Website</b></a>
+          <ul class="links">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Work</li>
+            <li>Info</li>
+            <li>
+              <a href={% url "login" %} >
+                Get Started
+              </a>  
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="content">
+        <div class="container">
+          <div class="info">
+            <h1>Looking For Inspiration</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odit nihil ullam nesciunt quidem iste, Repellendus odit nihil</p>
+            <button>Button name</button>
+          </div>
+          <div class="image">
+            <img src="https://i.postimg.cc/65QxYYzh/001234.png">
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
 
